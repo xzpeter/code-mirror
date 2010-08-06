@@ -1,0 +1,37 @@
+#!/bin/bash
+
+module=`echo $1 | tr [:lower:] [:upper:]`
+
+case $module in
+0)
+	echo "removing usbserial module ..."
+	sudo rmmod ch341
+	sudo rmmod pl2303
+	sudo rmmod usbserial
+	;;
+1|LC6311)
+	# LC6311 module 1ab7:6000
+	echo "installing LC6311 module ..."
+	sudo modprobe usbserial vendor=0x1ab7 product=0x6000
+	;;
+2|SIM4100)
+	# SIM4100 module 0456:6532
+	echo "installing SIM4100 module ..."
+	sudo modprobe usbserial vendor=0x0456 product=0x6532
+	;;
+3|MC703)
+	# MC703 module 12d1:1001
+	echo "installing MC703 module ..."
+	sudo modprobe usbserial vendor=0x12D1 product=0x1001
+	;;
+4|NORMAL)
+	# normal load module
+	echo "installing module with no parameters ..."
+	sudo modprobe usbserial
+	;;
+*)
+	# must give a name
+	echo "usage : $0 module_name [ lc6311(1) | sim4100(2) ]"
+	;;
+esac
+

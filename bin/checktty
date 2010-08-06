@@ -1,0 +1,7 @@
+#!/bin/bash
+while [ 1 ]; 
+do 
+	date; 
+	ls /dev/ttyUSB* /dev/ttyACM*; 
+	sleep 1; 
+done

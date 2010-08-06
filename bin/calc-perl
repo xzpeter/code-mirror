@@ -1,0 +1,8 @@
+#!/usr/bin/perl -w
+use strict;
+use warnings;
+while (my $str = shift) {
+	print $str, "=";
+	eval("print $str");
+	print "\n";
+}
