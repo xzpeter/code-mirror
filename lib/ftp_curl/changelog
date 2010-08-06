@@ -1,0 +1,19 @@
+v0.1
+下载断点续传
+
+v0.2
+加入上传断点续传
+
+v0.3
+加入测速功能，以及curl的错误代码返回
+
+v0.31
+返回已上传、下载的字节数
+在upload和download两个函数中都加入了一个double *byte_done参数，调用的时候传入一个指针，函数执行完成后，会返回成功传输的字节数。
+
+v0.32
+修改上传下载的参数，创建FTP_CURL_OPTIONS结构用来保存设置和返回的参数。
+参数中加入最后一次接收到的服务器响应long last_response
+
+v0.33
+加入函数char *ftp_curl_error_str(int err_no)，用来打印错误信息。
