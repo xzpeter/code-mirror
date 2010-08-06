@@ -1,0 +1,50 @@
+% 使用 \framebox 和 \rule 绘制任何长宽的矩形边框
+	\framebox[长度]{\rule[0cm][宽度]希望写入的内容（可以是图片）}
+% 图片置中
+	\centerline{\framebox[长度]{\rule[0cm][宽度]希望写入的内容（可以是图片）}}
+% 标注引用文献
+	\cite{文献label}
+% 引用图片
+	\ref{图片label}
+% 使用 \input 和 \include 将文件分块
+	\input{data/chap1}
+% 插入图片
+	\begin{figure}[h]
+	%\centerline{\includegraphics[width=6cm, angle=-90]{fig5.eps}}
+	\caption{图片题目}
+	\label{fig1}
+	\end{figure}
+% 控制段间距和缩进
+	% 1.无间距，无缩进
+	para1\\
+	para2
+	% 2.无间距，有缩进
+	para1
+
+	para2
+	% 3.有间距，无缩进
+	para1\\
+
+	\noindent para2
+	% 4.有间距，有缩进
+	para1\\
+
+	para2
+% 使用 \newcommand
+	\newcommand{\新命令名称}[参数个数]{...#1（参数1）...#2...}
+% vim-latex suite commands
+	<F5> to insert environment
+	<F7> to insert command
+	EXX quick environment
+	SXX quick sectioning
+	<ctrl+j> to jump in <+...+> format
+	use :help latex to check latex commands
+	use :help latex-suite.tex to check vim-latex suite HOWTO
+% cross product and dot product
+	\times and \cdot
+% change color of fonts:
+	\color{blue} we are blue fonts.
+% 可调整宽度的表格
+	\begin{tabular*}{0.95\textwidth}{rcc}
+		\hline
+	\end{tabular*}
