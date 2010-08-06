@@ -1,0 +1,57 @@
+%% this is some commonly used commands
+%% mailto : xzpeter@gmail.com
+
+% some chinese redefines
+\renewcommand \contentsname{目录}
+\renewcommand\listfigurename{插图索引}
+\renewcommand\listtablename{表格索引}
+\newcommand\listequationname{公式索引}
+\newcommand\equationname{公式}
+\renewcommand\refname{参考文献}
+\renewcommand\indexname{索引}
+\renewcommand\figurename{图}
+\renewcommand\tablename{表}
+\renewcommand\appendixname{附录}
+
+% defining the Chinese Font Sizes
+\newcommand{\xiaochu}{\fontsize{30pt}{40pt}\selectfont}    % 小初, 1.5倍行距
+\newcommand{\yihao}{\fontsize{26pt}{36pt}\selectfont}    % 一号, 1.4倍行距
+\newcommand{\erhao}{\fontsize{22pt}{28pt}\selectfont}    % 二号, 1.25倍行距
+\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}    % 小二, 单倍行距
+\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}    % 三号, 1.5倍行距
+\newcommand{\xiaosan}{\fontsize{15pt}{22pt}\selectfont}    % 小三, 1.5倍行距
+\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}    % 四号, 1.5倍行距
+\newcommand{\banxiaosi}{\fontsize{13pt}{19.5pt}\selectfont}    % 半小四, 1.5倍行距
+\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}    % 小四, 1.5倍行距
+\newcommand{\dawuhao}{\fontsize{11pt}{11pt}\selectfont}    % 大五号, 单倍行距
+\newcommand{\wuhao}{\fontsize{10.5pt}{10.5pt}\selectfont}    % 五号, 单倍行距
+\newcommand{\xiaowu}{\fontsize{9pt}{9pt}\selectfont}    % 小五号, 单倍行距
+
+% set graphic path
+\graphicspath{{figures/}}
+
+% some new commands
+%% abstract of my own
+\newcommand{\makeabs}[3]{
+	\begin{center}
+	{\bf \Large #1}
+	\end{center}
+
+	#2
+
+	{\bf Keywords:} #3
+}
+
+%% another version of maketitle
+% \makehead{title}{author}
+\newcommand{\maketit}[2]{
+\begin{center}
+
+	\xiaoer
+	\textbf{ #1 }\\[15pt]
+	\wuhao
+
+	#2
+
+\end{center}
+}

@@ -1,0 +1,64 @@
+%% desc : basic configuration for XeLaTex compilation
+%% mailto : xzpeter@gmail.com
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% basic settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% settings about titles
+\usepackage[raggedright,pagestyles]{titlesec}
+% \titleformat{command}[shape]{format}{label}{sep}{before}[after]
+\titleformat{\section}{\Large\bfseries}{\S\,\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\S\,\thesubsection}{1em}{}
+% settings about links
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=red,citecolor=green]{hyperref}
+% settings about page margins
+%\usepackage[top=1.2in,bottom=1.2in,left=1.2in,right=1in]{geometry}
+\usepackage{geometry}
+%\geometry{left=20mm, right=20mm, top=25mm, bottom=25mm, noheadfoot}
+\geometry{left=20mm, right=20mm, top=25mm, bottom=25mm}
+% line breaks
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+% indents
+% \usepackage{indentfirst}
+\makeatletter
+\let\@afterindentfalse\@afterindenttrue
+\@afterindenttrue
+\makeatother
+\setlength{\parindent}{2.3em}
+
+% settings about fonts
+\usepackage[no-math]{fontspec}
+%% \setmainfont[Mapping=tex-text]{Nimbus Roman No9 L}
+%% \setsansfont[Mapping=tex-text]{Nimbus Sans L}
+%% \setmonofont[Scale=0.8]{Nimbus Mono L}
+
+%\setmainfont[BoldFont=方正粗宋简体]{Adobe Song Std}
+\setmainfont[BoldFont=方正粗宋简体]{方正新报宋简体}
+%% \setmainfont[BoldFont=方正粗宋简体]{Nimbus Sans L}
+%% sans字体是paper类型文档的title和authur使用字体！要正确配置才可以使用paper文档
+\setsansfont[BoldFont=方正粗宋简体]{AR PL UKai CN}
+\setmonofont[BoldFont=方正粗宋简体]{YaHei Consolas Hybrid}
+
+% for chinese font:
+%% \newfontfamily\zhpunctfont{Adobe Song Std}
+%% \setzhmainfont{Adobe Song Std}
+%% \setzhsansfont{方正粗宋简体}
+%% \setzhmonofont{YaHei Consolas Hybrid}
+
+% set page head and foot
+\newpagestyle{main}{
+\sethead{\small\S\,\thesection\quad\sectiontitle}{}{}
+\setfoot{}{}{\large$\cdot$~\thepage~$\cdot$}
+\headrule
+}
+\pagestyle{main}
+
+% be capable of inputting .eps pictures
+\usepackage[dvips]{graphicx}
+
+% set line spread(设置行距)
+\linespread{1.1}
+
+% set deault graphics path
+\graphicspath{figures/}
