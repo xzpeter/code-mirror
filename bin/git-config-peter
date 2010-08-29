@@ -1,0 +1,8 @@
+#!/bin/bash
+git config --global alias.di 'diff --color'
+git config --global alias.st 'status --color'
+git config --global alias.lo 'log --color'
+git config --global alias.br 'branch --color'
+git config --global user.name 'xzpeter'
+git config --global user.email 'xzpeter@gmail.com'
+
