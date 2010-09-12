@@ -4,10 +4,11 @@ use warnings;
 $| = 1;
 
 # constants defined here
-my $home_dir = '/home/peter/codes/perl/recite/';
+my $home_dir = '/home/xu/codes/perl/recite/';
 my $cet6_data_file = $home_dir."gre.dat";
 my $cet6_study_file = $home_dir."my_process_gre.dat";
-my $block_size = 50;
+my $block_size = 200;
+my $dict = "牛津高阶英汉双解";
 
 # the word currently study
 
@@ -42,7 +43,7 @@ sub print_color ($$) {
 
 sub look_up_dict {
 	my $word = shift || return;
-	my $expr = `sdcv -u 牛津现代英汉双解词典 -n $word`;
+	my $expr = `sdcv -u $dict -n $word`;
 	$expr =~ s/ +(\d+) +/\n\n$1 /g;
 	return $expr;
 }
@@ -98,7 +99,13 @@ sub do_study {
 				print_color(33, look_up_dict($list->[$cur]{word}));
 			} else {
 				my $ans = lc <>;
-				if ($ans =~ /^c/) {
+				if ($ans =~ /^a/) {
+					$remembered++;
+					$list->[$cur]{learnt} = 1;
+					print "removing word: ";
+					print_color("9;31", $list->[$cur]{word});
+					print "\n";
+				} elsif ($ans =~ /^c/) {
 					print_color(33, look_up_dict($list->[$cur]{word}));
 				}
 			}
