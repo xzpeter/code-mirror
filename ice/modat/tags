@@ -1,0 +1,201 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AR	Makefile	/^AR = $(CROSS)ar$/;"	m	language:Make
+AT_CME_ERROR	modat.h	/^	AT_CME_ERROR = 3,	\/* return "AT_CME_ERROR" *\/$/;"	e	language:C++	enum:_at_return
+AT_CMS_ERROR	modat.h	/^	AT_CMS_ERROR = 4,	\/* return "AT_CMS_ERROR" *\/$/;"	e	language:C++	enum:_at_return
+AT_ERROR	modat.h	/^	AT_ERROR = 2,		\/* return "ERROR" *\/$/;"	e	language:C++	enum:_at_return
+AT_HWERROR	modat.h	/^	AT_HWERROR = 5,		\/* hardware error *\/$/;"	e	language:C++	enum:_at_return
+AT_MODE_BLOCK	modat.h	71;"	d	language:C++
+AT_MODE_LINE	modat.h	68;"	d	language:C++
+AT_NOT_RET	modat.h	/^	AT_NOT_RET = -1,	\/* not returned *\/$/;"	e	language:C++	enum:_at_return
+AT_NO_CARRIER	modat.h	/^	AT_NO_CARRIER = 6,	\/* 'no carrier' error *\/$/;"	e	language:C++	enum:_at_return
+AT_OK	modat.h	/^	AT_OK = 0,		\/* return "OK" *\/$/;"	e	language:C++	enum:_at_return
+AT_RAWDATA	modat.h	/^	AT_RAWDATA = 1,		\/* return ">", waiting for SMS input. *\/$/;"	e	language:C++	enum:_at_return
+AT_READY	modat.h	/^	AT_READY,		\/* normal stat, after host picked the results, HOST writable *\/$/;"	e	language:C++	enum:_at_status
+AT_RECVED	modat.h	/^	AT_RECVED,		\/* after the daemon recved the response, HOST writable *\/$/;"	e	language:C++	enum:_at_status
+AT_REQUEST	modat.h	/^	AT_REQUEST,		\/* after the host sends a request, DAEMON writable *\/$/;"	e	language:C++	enum:_at_status
+AT_RETURN	modat.h	/^} AT_RETURN;$/;"	t	language:C++	typeref:enum:_at_return
+AT_SENT	modat.h	/^	AT_SENT,		\/* after the daemon sent the cmd, DAEMON writable *\/$/;"	e	language:C++	enum:_at_status
+AT_STATUS	modat.h	/^} AT_STATUS;$/;"	t	language:C++	typeref:enum:_at_status
+AT_TIMEOUT_COUNT_MAX	modat_config.h	11;"	d	language:C++
+AT_TIMEOUT_SEC	modat_config.h	10;"	d	language:C++
+CC	Makefile	/^CC = $(CROSS)gcc $/;"	m	language:Make
+CFLAGS	Makefile	/^CFLAGS = -g -Wall -Werror$/;"	m	language:Make
+CRC_EVEN	utils.h	/^	CRC_EVEN,$/;"	e	language:C++	enum:_crc_mode
+CRC_NONE	utils.h	/^	CRC_NONE, $/;"	e	language:C++	enum:_crc_mode
+CRC_ODD	utils.h	/^	CRC_ODD,$/;"	e	language:C++	enum:_crc_mode
+DAEMON_RECV_BUFFER_SIZE	modat_daemon.c	20;"	d	language:C	file:
+DEAD	modat.h	/^	DEAD = 99,		\/* all the resources are released and the device is$/;"	e	language:C++	enum:_modat_status
+DEV_DIR	modat_daemon.h	4;"	d	language:C++
+DEV_FILE_NAME_LEN	modat.h	87;"	d	language:C++
+DM_MODULE_FORCE_RESTART_LEN	modat_config.h	12;"	d	language:C++
+DURING_STARTUP	modat_daemon.c	25;"	d	language:C	file:
+FAILED_STARTUP	modat_daemon.c	27;"	d	language:C	file:
+FILE_NAME_LEN	modat_daemon.h	5;"	d	language:C++
+FULL_FILE_NAME_LEN	modat_daemon.h	6;"	d	language:C++
+GLOBAL_BUF_LEN	modat.h	88;"	d	language:C++
+INIT	modat.h	/^	INIT = 1,$/;"	e	language:C++	enum:_modat_status
+INIT_STARTUP	modat_daemon.c	24;"	d	language:C	file:
+IO_WAIT_TIME	modat_daemon.c	29;"	d	language:C	file:
+IO_WAIT_TIME	utils.c	18;"	d	language:C	file:
+KEY_LEN	modat_common.c	194;"	d	language:C	file:
+LDFLAGS	Makefile	/^LDFLAGS = -lpthread $/;"	m	language:Make
+LOG_FILE	dbg.h	10;"	d	language:C++
+MAX_CELLID_LEN	modat_common.c	14;"	d	language:C	file:
+MAX_GBUF_SIZE	rbuf.h	10;"	d	language:C++
+MAX_MOBILE_ID_LEN	modat_config.h	9;"	d	language:C++
+MAX_USERS_PER_MODEM	modat.c	18;"	d	language:C	file:
+MIN_LINE_BUF_SIZE	rbuf.h	11;"	d	language:C++
+MODAT	modat.h	/^typedef struct _modat MODAT;$/;"	t	language:C++	typeref:struct:_modat
+MODAT_AT_BUF	modat.h	/^} MODAT_AT_BUF;$/;"	t	language:C++	typeref:struct:_modat_at_buf
+MODAT_KEYWORD_LEN	modat.h	60;"	d	language:C++
+MODAT_MAX_MOBILE_ID_LEN	modat.h	89;"	d	language:C++
+MODAT_METHODS	modat.h	91;"	d	language:C++
+MODAT_NAME_LEN	modat.h	86;"	d	language:C++
+MODAT_OBJ	Makefile	/^MODAT_OBJ = rbuf.o utils.o modat_common.o modat_daemon.o modat.o T35i.o$/;"	m	language:Make
+MODAT_RECV_BUFLEN	modat.h	59;"	d	language:C++
+MODAT_SEND_BUFLEN	modat.h	58;"	d	language:C++
+MODAT_STATUS	modat.h	/^} MODAT_STATUS;$/;"	t	language:C++	typeref:enum:_modat_status
+MODAT_SUPPORT	modat.h	/^ MODAT_METHODS} MODAT_SUPPORT;$/;"	t	language:C++	typeref:struct:_modat_support
+MODAT_TYPE	modat.h	/^} MODAT_TYPE;$/;"	t	language:C++	typeref:enum:_modat_type
+NOT_RESPONDING	modat.h	/^	NOT_RESPONDING = 96,	\/* at cmd timeout too many time! *\/$/;"	e	language:C++	enum:_modat_status
+NOT_STARTUP	modat_daemon.c	23;"	d	language:C	file:
+OK_STARTUP	modat_daemon.c	26;"	d	language:C	file:
+PRJ	Makefile	/^PRJ = modat $/;"	m	language:Make
+PROD_NAME_LEN	modat.h	135;"	d	language:C++
+RBUF	rbuf.h	/^typedef struct _rbuf RBUF;$/;"	t	language:C++	typeref:struct:_rbuf
+RBUF_SIZE	modat.c	144;"	d	language:C	file:
+READY	modat.h	/^	READY = 3,$/;"	e	language:C++	enum:_modat_status
+SICK	modat.h	/^	SICK = 80,		\/* status >= SICK is not right ... *\/$/;"	e	language:C++	enum:_modat_status
+SPD_DEFAULT	utils.c	97;"	d	language:C	file:
+STARTUP	modat.h	/^	STARTUP = 2,$/;"	e	language:C++	enum:_modat_status
+SUPPORTED_MODEMS_N	modat.h	18;"	d	language:C++
+T35i	modat.h	/^	T35i = 1,$/;"	e	language:C++	enum:_modat_type
+T35i_module_startup	T35i.c	/^int T35i_module_startup(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+TYPE_ANY	modat.h	/^	TYPE_ANY = 255,$/;"	e	language:C++	enum:_modat_type
+UNKNOWN	modat.h	/^	UNKNOWN = 0,$/;"	e	language:C++	enum:_modat_type
+UNTACHED	modat.h	/^	UNTACHED = 97,		\/* device file is missing *\/$/;"	e	language:C++	enum:_modat_status
+WAIT_USERS	modat.h	/^	WAIT_USERS = 98,	\/* waiting for other working thread to release$/;"	e	language:C++	enum:_modat_status
+WORKING	modat.h	/^	WORKING = 4,$/;"	e	language:C++	enum:_modat_status
+_GNU_SOURCE	modat_daemon.c	7;"	d	language:C	file:
+__DBG_H__	dbg.h	2;"	d	language:C++
+__MODAT_CONFIG_H__	modat_config.h	7;"	d	language:C++
+__MODAT_DAEMON_H__	modat_daemon.h	2;"	d	language:C++
+__MODAT_H__	modat.h	8;"	d	language:C++
+__MODAT_INCLUDE_H__	modat_include.h	2;"	d	language:C++
+__MOD_COMMON_H__	modat_common.h	2;"	d	language:C++
+__RBUF_H__	rbuf.h	7;"	d	language:C++
+__T35I_H__	T35i.h	2;"	d	language:C++
+__UTILS_H__	utils.h	7;"	d	language:C++
+_at_return	modat.h	/^typedef enum _at_return {$/;"	g	language:C++
+_at_status	modat.h	/^typedef enum _at_status {$/;"	g	language:C++
+_crc_mode	utils.h	/^typedef enum _crc_mode {$/;"	g	language:C++
+_modat	modat.h	/^struct _modat {$/;"	s	language:C++
+_modat_at_buf	modat.h	/^typedef struct _modat_at_buf {$/;"	s	language:C++
+_modat_is_sick	modat.c	/^int _modat_is_sick(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+_modat_status	modat.h	/^typedef enum _modat_status {$/;"	g	language:C++
+_modat_support	modat.h	/^typedef struct _modat_support {$/;"	s	language:C++
+_modat_type	modat.h	/^typedef enum _modat_type {$/;"	g	language:C++
+_rbuf	rbuf.h	/^struct _rbuf {$/;"	s	language:C++
+_trans_speed	utils.c	/^static int _trans_speed(int speed)$/;"	f	language:C	file:	signature:(int speed)
+at	modat.h	/^	MODAT_AT_BUF at;	\/* at cmd buffer *\/$/;"	m	language:C++	struct:_modat
+at_buffer_init	modat_daemon.c	/^void at_buffer_init(MODAT_AT_BUF * at)$/;"	f	language:C	signature:(MODAT_AT_BUF * at)
+at_get_sim	modat.c	/^char *at_get_sim(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+buffered	rbuf.h	/^	unsigned int buffered;$/;"	m	language:C++	struct:_rbuf
+check_at_ready	modat.c	/^int check_at_ready(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+check_at_recved	modat.c	/^int check_at_recved(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+check_device_file	modat.h	/^	int (*check_device_file) (char *file);$/;"	m	language:C++	struct:_modat_support
+check_thres_passed	utils.c	/^int check_thres_passed(struct timeval old_time, long threshold)$/;"	f	language:C	signature:(struct timeval old_time, long threshold)
+common_check_device_file	modat_common.c	/^int common_check_device_file(char *file)$/;"	f	language:C	signature:(char *file)
+common_close_port	modat_common.c	/^void common_close_port(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+common_get_self_sim_number	modat_common.c	/^int common_get_self_sim_number(MODAT * p, char *num)$/;"	f	language:C	signature:(MODAT * p, char *num)
+common_module_startup	modat_common.c	/^int common_module_startup(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+common_network_status	modat_common.c	/^int common_network_status(MODAT * p, char *buf)$/;"	f	language:C	signature:(MODAT * p, char *buf)
+common_open_port	modat_common.c	/^int common_open_port(MODAT * pmodat)$/;"	f	language:C	signature:(MODAT * pmodat)
+common_parse_line	modat_common.c	/^int common_parse_line(MODAT * p, char *line)$/;"	f	language:C	signature:(MODAT * p, char *line)
+common_probe	modat_common.c	/^int common_probe(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+common_recv_sms	modat_common.c	/^int common_recv_sms(MODAT *p, int pos, char *peer, char *data, int size)$/;"	f	language:C	signature:(MODAT *p, int pos, char *peer, char *data, int size)
+common_send	modat_common.c	/^AT_RETURN common_send(MODAT * p, char *data, char *result, int mode)$/;"	f	language:C	signature:(MODAT * p, char *data, char *result, int mode)
+common_send_sms	modat_common.c	/^int common_send_sms(MODAT * p, char *who, char *data)$/;"	f	language:C	signature:(MODAT * p, char *who, char *data)
+common_set_engineer_mode	modat_common.c	/^int common_set_engineer_mode(MODAT * p, int on)$/;"	f	language:C	signature:(MODAT * p, int on)
+common_set_sms_mode	modat_common.c	/^int common_set_sms_mode(MODAT * p, int n)$/;"	f	language:C	signature:(MODAT * p, int n)
+common_start_call	modat_common.c	/^int common_start_call(MODAT * p, char *who)$/;"	f	language:C	signature:(MODAT * p, char *who)
+common_stop_call	modat_common.c	/^int common_stop_call(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+crc_mode	utils.h	/^} crc_mode;$/;"	t	language:C++	typeref:enum:_crc_mode
+cur_read_p	rbuf.h	/^	char *cur_read_p;$/;"	m	language:C++	struct:_rbuf
+cur_write_p	rbuf.h	/^	char *cur_write_p;$/;"	m	language:C++	struct:_rbuf
+dbg	dbg.h	14;"	d	language:C++
+dev_file	modat.h	/^	char dev_file[DEV_FILE_NAME_LEN];	\/* e.g. "ttyUSB0" *\/$/;"	m	language:C++	struct:_modat
+device_daemon	modat_daemon.c	/^void *device_daemon(void *pdata)$/;"	f	language:C	signature:(void *pdata)
+do_init_work	modat_daemon.c	/^void do_init_work(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+do_send_and_recv	modat_daemon.c	/^void do_send_and_recv(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+do_startup_work	modat_daemon.c	/^void *do_startup_work(void *data)$/;"	f	language:C	signature:(void *data)
+dump_hex	utils.c	/^char *dump_hex(char *buf, int len)$/;"	f	language:C	signature:(char *buf, int len)
+enabled	modat.h	/^	int enabled;		\/* if the device is activated *\/$/;"	m	language:C++	struct:_modat
+engineer_mode	modat.h	/^	volatile int engineer_mode;	\/* if engineer mode on *\/$/;"	m	language:C++	struct:_modat
+g_buf	rbuf.h	/^	char *g_buf;$/;"	m	language:C++	struct:_rbuf
+g_buf_size	rbuf.h	/^	unsigned int g_buf_size;$/;"	m	language:C++	struct:_rbuf
+get_elapsed_msec	utils.c	/^long get_elapsed_msec(struct timeval old_time)$/;"	f	language:C	signature:(struct timeval old_time)
+get_elapsed_sec	utils.c	/^long get_elapsed_sec(struct timeval old_time)$/;"	f	language:C	signature:(struct timeval old_time)
+handle_line	modat_daemon.c	/^int handle_line(MODAT * p, char *line)$/;"	f	language:C	signature:(MODAT * p, char *line)
+keyword	modat.h	/^	char keyword[MODAT_KEYWORD_LEN];$/;"	m	language:C++	struct:_modat_at_buf
+line_buf	rbuf.h	/^	char *line_buf;$/;"	m	language:C++	struct:_rbuf
+line_buf_size	rbuf.h	/^	unsigned int line_buf_size;$/;"	m	language:C++	struct:_rbuf
+main	main.c	/^int main(int argc, char *argv[])$/;"	f	language:C	signature:(int argc, char *argv[])
+make_date	utils.c	/^void make_date(char *ct)$/;"	f	language:C	signature:(char *ct)
+make_time	utils.c	/^void make_time(char *ct)$/;"	f	language:C	signature:(char *ct)
+modat_detect	modat.c	/^MODAT_TYPE modat_detect(char *dev_file)$/;"	f	language:C	signature:(char *dev_file)
+modat_get_enable	modat.c	/^int modat_get_enable(MODAT * pat)$/;"	f	language:C	signature:(MODAT * pat)
+modat_get_engineer_mode	modat.c	/^int modat_get_engineer_mode(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+modat_get_status	modat.c	/^MODAT_STATUS modat_get_status(MODAT * pat)$/;"	f	language:C	signature:(MODAT * pat)
+modat_init	modat.c	/^MODAT *modat_init(char *dev_file, int speed)$/;"	f	language:C	signature:(char *dev_file, int speed)
+modat_lock	modat.c	/^int modat_lock(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+modat_ready	modat.c	/^int modat_ready(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+modat_recved_done	modat.c	/^void modat_recved_done(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+modat_register_methods	modat.c	/^void modat_register_methods(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+modat_release	modat.c	/^void modat_release(MODAT * pat)$/;"	f	language:C	signature:(MODAT * pat)
+modat_send_it	modat.c	/^void modat_send_it(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+modat_set_disable	modat.c	/^void modat_set_disable(MODAT * pat)$/;"	f	language:C	signature:(MODAT * pat)
+modat_set_enable	modat.c	/^void modat_set_enable(MODAT * pat)$/;"	f	language:C	signature:(MODAT * pat)
+modat_set_engineer_mode	modat.c	/^int modat_set_engineer_mode(MODAT * p, int mode)$/;"	f	language:C	signature:(MODAT * p, int mode)
+modat_set_status	modat.c	/^void modat_set_status(MODAT * pat, MODAT_STATUS status)$/;"	f	language:C	signature:(MODAT * pat, MODAT_STATUS status)
+modat_supports	modat.c	/^const MODAT_SUPPORT modat_supports[SUPPORTED_MODEMS_N + 1] = {$/;"	v	language:C
+modat_unlock	modat.c	/^int modat_unlock(MODAT * p)$/;"	f	language:C	signature:(MODAT * p)
+modat_user_free	modat.c	/^void modat_user_free(MODAT * pat)$/;"	f	language:C	signature:(MODAT * pat)
+modat_user_malloc	modat.c	/^int modat_user_malloc(MODAT * pat)$/;"	f	language:C	signature:(MODAT * pat)
+mode	modat.h	/^	int mode;$/;"	m	language:C++	struct:_modat_at_buf
+mutex	modat.h	/^	pthread_mutex_t mutex;	\/* mutex of the modat struct *\/$/;"	m	language:C++	struct:_modat
+name	modat.h	/^	char name[MODAT_NAME_LEN];	\/* device (file) name *\/$/;"	m	language:C++	struct:_modat
+portfd	modat.h	/^	int portfd;		\/* file handler of the serial port *\/$/;"	m	language:C++	struct:_modat
+product_name	modat.h	/^	char product_name[PROD_NAME_LEN];$/;"	m	language:C++	struct:_modat_support
+r	modat.h	/^	RBUF *r;		\/* a simple round buffer *\/$/;"	m	language:C++	struct:_modat
+rbuf_init	rbuf.c	/^RBUF *rbuf_init(unsigned int size)$/;"	f	language:C	signature:(unsigned int size)
+rbuf_read	rbuf.c	/^unsigned int rbuf_read(RBUF * r, char *data, unsigned int len)$/;"	f	language:C	signature:(RBUF * r, char *data, unsigned int len)
+rbuf_release	rbuf.c	/^RBUF *rbuf_release(RBUF * rbuf)$/;"	f	language:C	signature:(RBUF * rbuf)
+rbuf_strchr	rbuf.c	/^int rbuf_strchr(RBUF * r, char c)$/;"	f	language:C	signature:(RBUF * r, char c)
+rbuf_write	rbuf.c	/^unsigned int rbuf_write(RBUF * r, char *data, unsigned int len)$/;"	f	language:C	signature:(RBUF * r, char *data, unsigned int len)
+read	rbuf.h	/^	unsigned int (*read) (RBUF *, char *data, unsigned int len);$/;"	m	language:C++	struct:_rbuf
+readline	rbuf.c	/^char *readline(RBUF * r)$/;"	f	language:C	signature:(RBUF * r)
+readline	rbuf.h	/^	char *(*readline) (RBUF *);$/;"	m	language:C++	struct:_rbuf
+recv_buf	modat.h	/^	char recv_buf[MODAT_RECV_BUFLEN];$/;"	m	language:C++	struct:_modat_at_buf
+reset_timer	utils.c	/^void reset_timer(struct timeval *tv)$/;"	f	language:C	signature:(struct timeval *tv)
+ret	modat.h	/^	AT_RETURN ret;$/;"	m	language:C++	struct:_modat_at_buf
+send_buf	modat.h	/^	char send_buf[MODAT_SEND_BUFLEN];$/;"	m	language:C++	struct:_modat_at_buf
+sent_time	modat.h	/^	time_t sent_time;$/;"	m	language:C++	struct:_modat_at_buf
+serial_open_port	utils.c	/^int serial_open_port(char *portdevice, int speed, crc_mode crc)$/;"	f	language:C	signature:(char *portdevice, int speed, crc_mode crc)
+sim	modat.h	/^	char sim[MODAT_MAX_MOBILE_ID_LEN];	\/* simcard number *\/$/;"	m	language:C++	struct:_modat
+speed	modat.h	/^	unsigned int speed;	\/* speed of the port *\/$/;"	m	language:C++	struct:_modat
+start_copy	modat.h	/^	volatile int start_copy;	\/* put the line into at_recv_buf only if start_copy=1 *\/$/;"	m	language:C++	struct:_modat_at_buf
+start_up_status	modat.h	/^	volatile int start_up_status;	\/* if the startup thread is alive *\/$/;"	m	language:C++	struct:_modat
+status	modat.h	/^	AT_STATUS status;$/;"	m	language:C++	struct:_modat_at_buf
+status	modat.h	/^	MODAT_STATUS status;	\/* INIT, READY, WORKING, DEAD *\/$/;"	m	language:C++	struct:_modat
+strchr	rbuf.h	/^	int (*strchr) (RBUF *, char c);$/;"	m	language:C++	struct:_rbuf
+thread_id	modat.h	/^	pthread_t thread_id;	\/* thread id of the listening thread *\/$/;"	m	language:C++	struct:_modat
+time_out_count	modat.h	/^	int time_out_count;$/;"	m	language:C++	struct:_modat_at_buf
+type	modat.h	/^	MODAT_TYPE type;	\/* decide which driver to use *\/$/;"	m	language:C++	struct:_modat
+users_count	modat.h	/^	unsigned int users_count;	\/* count of users who are using the mod *\/$/;"	m	language:C++	struct:_modat
+write	rbuf.h	/^	unsigned int (*write) (RBUF *, char *data, unsigned int len);$/;"	m	language:C++	struct:_rbuf
