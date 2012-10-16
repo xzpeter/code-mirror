@@ -20,7 +20,9 @@
 #endif
 
 #ifdef USED_IN_KERNEL
-  #define _rb_malloc kmalloc
+  #include <linux/slab.h>
+  #include <linux/string.h>
+  #define _rb_malloc(n) kmalloc(n, GFP_KERNEL)
   #define _rb_free   kfree
 #else /* ifdef USED_IN_KERNEL */
   #include <stdio.h>
@@ -47,15 +49,6 @@ struct ring_buffer {
 };
 
 #define  RB_MIN(a, b)  ((a>b)?(b):(a))
-
-struct ring_buffer {
-    char *buf;                  /* space to store data */
-    unsigned int total;         /* total size of the buffer. should be 1
-                                   smaller than size of BUF */
-    unsigned int used;          /* how many space used in the buffer */
-    char *read;                 /* the read/write pointers */
-    char *write;
-};
 
 /* this will create a ring buffer with size=SIZE and return the struct pointer */
 struct ring_buffer *ring_buffer_create(unsigned int size)
