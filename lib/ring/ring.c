@@ -37,6 +37,15 @@
   #define dbg(fmt, args...)
 #endif /* ifdef DEBUG_RING_BUFFER */
 
+struct ring_buffer {
+    char *buf;                  /* space to store data */
+    unsigned int total;         /* total size of the buffer. should be 1
+                                   smaller than size of BUF */
+    unsigned int used;          /* how many space used in the buffer */
+    char *read;                 /* the read/write pointers */
+    char *write;
+};
+
 #define  RB_MIN(a, b)  ((a>b)?(b):(a))
 
 struct ring_buffer {
@@ -148,6 +157,12 @@ unsigned int ring_buffer_read(struct ring_buffer *ring, char *buffer,
     /* update 'used' param finally */
     ring->used -= len;
     return len;
+}
+
+void ring_buffer_destroy(struct ring_buffer *ring)
+{
+    _rb_free(ring->buf);
+    _rb_free(ring);
 }
 
 #ifdef DEBUG_RING_BUFFER
