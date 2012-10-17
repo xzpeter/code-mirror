@@ -7,34 +7,28 @@
 
   1. DEBUG_RING
   we should define DEBUG_RING to debug the buffer
-  this macro is only supported under user mode
-
-  2. USED_IN_KERNEL
-  we should define this when used in kernel stuff
 */
 
 /* since we don't support debugging the code under kernel mode, we should
    detect it if there is any attempt. */
-#if (defined DEBUG_RING_BUFFER) && (defined USED_IN_KERNEL)
-  #error "ring buffer debugging in kernel mode not supported. "
-#endif
-
-#ifdef USED_IN_KERNEL
+#ifdef __KERNEL__
   #include <linux/slab.h>
   #include <linux/string.h>
   #define _rb_malloc(n) kmalloc(n, GFP_KERNEL)
-  #define _rb_free   kfree
+  #define _rb_free kfree
+  #define _rb_print printk
 #else /* ifdef USED_IN_KERNEL */
   #include <stdio.h>
   #include <stdlib.h>
   #include <time.h>
   #include <string.h>
   #define _rb_malloc malloc
-  #define _rb_free   free
+  #define _rb_free free
+  #define _rb_print printf
 #endif /* ifdef USED_IN_KERNEL */
 
 #ifdef DEBUG_RING_BUFFER
-  #define dbg(fmt, args...) printf("[rb] " fmt "\n", ##args)
+  #define dbg(fmt, args...) _rb_print("[rb] " fmt "\n", ##args)
 #else /* ifdef DEBUG_RING_BUFFER */
   #define dbg(fmt, args...)
 #endif /* ifdef DEBUG_RING_BUFFER */
